@@ -5,13 +5,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Great Smoky Mountains National Park",
-          "2015": 10.7,
-          "2016": 11.3,
-          "2017": 11.3,
-          "2018": 11.4,
-          "2019": 12.6,
-          "2020": 12.4,
-          "2021": 14.1
+          "Visits_2015": 10.7,
+          "Visits_2016": 11.3,
+          "Visits_2017": 11.3,
+          "Visits_2018": 11.4,
+          "Visits_2019": 12.6,
+          "Visits_2020": 12.4,
+          "Visits_2021": 14.1
         },
         "geometry": {
           "type": "Point",
@@ -25,13 +25,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Gulf Islands National Seashore",
-          "2015": 3.98,
-          "2016": 4.77,
-          "2017": 3.95,
-          "2018": 4.23,
-          "2019": 5.6,
-          "2020": 4.01,
-          "2021": 5.5
+          "Visits_2015": 3.98,
+          "Visits_2016": 4.77,
+          "Visits_2017": 3.95,
+          "Visits_2018": 4.23,
+          "Visits_2019": 5.6,
+          "Visits_2020": 4.01,
+          "Visits_2021": 5.5
         },
         "geometry": {
           "type": "Point",
@@ -45,13 +45,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Zion National Park",
-          "2015": 3.65,
-          "2016": 4.3,
-          "2017": 4.5,
-          "2018": 4.32,
-          "2019": 4.49,
-          "2020": 3.59,
-          "2021": 5
+          "Visits_2015": 3.65,
+          "Visits_2016": 4.3,
+          "Visits_2017": 4.5,
+          "Visits_2018": 4.32,
+          "Visits_2019": 4.49,
+          "Visits_2020": 3.59,
+          "Visits_2021": 5
         },
         "geometry": {
           "type": "Point",
@@ -65,13 +65,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Yellowstone National Park",
-          "2015": 4.1,
-          "2016": 4.26,
-          "2017": 4.12,
-          "2018": 4.12,
-          "2019": 4.02,
-          "2020": 3.81,
-          "2021": 4.9
+          "Visits_2015": 4.1,
+          "Visits_2016": 4.26,
+          "Visits_2017": 4.12,
+          "Visits_2018": 4.12,
+          "Visits_2019": 4.02,
+          "Visits_2020": 3.81,
+          "Visits_2021": 4.9
         },
         "geometry": {
           "type": "Point",
@@ -85,13 +85,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Grand Canyon National Park",
-          "2015": 5.52,
-          "2016": 5.96,
-          "2017": 6.25,
-          "2018": 6.38,
-          "2019": 5.97,
-          "2020": 2.9,
-          "2021": 4.5
+          "Visits_2015": 5.52,
+          "Visits_2016": 5.96,
+          "Visits_2017": 6.25,
+          "Visits_2018": 6.38,
+          "Visits_2019": 5.97,
+          "Visits_2020": 2.9,
+          "Visits_2021": 4.5
         },
         "geometry": {
           "type": "Point",
@@ -105,13 +105,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Rocky Mountain National Park",
-          "2015": 4.16,
-          "2016": 4.52,
-          "2017": 4.44,
-          "2018": 4.59,
-          "2019": 4.67,
-          "2020": 3.31,
-          "2021": 4.4
+          "Visits_2015": 4.16,
+          "Visits_2016": 4.52,
+          "Visits_2017": 4.44,
+          "Visits_2018": 4.59,
+          "Visits_2019": 4.67,
+          "Visits_2020": 3.31,
+          "Visits_2021": 4.4
         },
         "geometry": {
           "type": "Point",
@@ -125,13 +125,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Acadia National Park",
-          "2015": 2.81,
-          "2016": 3.3,
-          "2017": 3.51,
-          "2018": 3.54,
-          "2019": 3.44,
-          "2020": 2.67,
-          "2021": 4
+          "Visits_2015": 2.81,
+          "Visits_2016": 3.3,
+          "Visits_2017": 3.51,
+          "Visits_2018": 3.54,
+          "Visits_2019": 3.44,
+          "Visits_2020": 2.67,
+          "Visits_2021": 4
         },
         "geometry": {
           "type": "Point",
@@ -145,13 +145,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Grand Teton National Park",
-          "2015": 3.15,
-          "2016": 3.27,
-          "2017": 3.32,
-          "2018": 3.49,
-          "2019": 3.41,
-          "2020": 3.29,
-          "2021": 3.9
+          "Visits_2015": 3.15,
+          "Visits_v2016": 3.27,
+          "Visits_2017": 3.32,
+          "Visits_2018": 3.49,
+          "Visits_2019": 3.41,
+          "Visits_2020": 3.29,
+          "Visits_2021": 3.9
         },
         "geometry": {
           "type": "Point",
@@ -165,13 +165,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Yosemite National Park",
-          "2015": 4.15,
-          "2016": 5.03,
-          "2017": 4.34,
-          "2018": 4,
-          "2019": 4.42,
-          "2020": 2.27,
-          "2021": 3.3
+          "Visits_2015": 4.15,
+          "Visits_2016": 5.03,
+          "Visits_2017": 4.34,
+          "Visits_2018": 4,
+          "Visits_2019": 4.42,
+          "Visits_2020": 2.27,
+          "Visits_2021": 3.3
         },
         "geometry": {
           "type": "Point",
@@ -185,13 +185,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Indiana Dunes National Park",
-          "2015": 1.64,
-          "2016": 1.7,
-          "2017": 2.16,
-          "2018": 1.76,
-          "2019": 2.13,
-          "2020": 2.29,
-          "2021": 3.2
+          "Visits_2015": 1.64,
+          "Visits_2016": 1.7,
+          "Visits_2017": 2.16,
+          "Visits_2018": 1.76,
+          "Visits_2019": 2.13,
+          "Visits_2020": 2.29,
+          "Visits_2021": 3.2
         },
         "geometry": {
           "type": "Point",
@@ -205,13 +205,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Everglades National Park",
-          "2015": 1.07,
-          "2016": 0.93,
-          "2017": 1.18,
-          "2018": 0.59,
-          "2019": 1.1,
-          "2020": 0.73,
-          "2021": 0.94
+          "Visits_2015": 1.07,
+          "Visits_2016": 0.93,
+          "Visits_2017": 1.18,
+          "Visits_2018": 0.59,
+          "Visits_2019": 1.1,
+          "Visits_2020": 0.73,
+          "Visits_2021": 0.94
         },
         "geometry": {
           "type": "Point",
@@ -225,13 +225,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Glacier National Park",
-          "2015": 2.37,
-          "2016": 3.01,
-          "2017": 3.31,
-          "2018": 2.97,
-          "2019": 3.05,
-          "2020": 1.7,
-          "2021": 3.08
+          "Visits_2015": 2.37,
+          "Visits_2016": 3.01,
+          "Visits_2017": 3.31,
+          "Visits_2018": 2.97,
+          "Visits_2019": 3.05,
+          "Visits_2020": 1.7,
+          "Visits_2021": 3.08
         },
         "geometry": {
           "type": "Point",
@@ -245,13 +245,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Badlands National Park",
-          "2015": 0.98,
-          "2016": 0.99,
-          "2017": 1.3,
-          "2018": 1.9,
-          "2019": 0.97,
-          "2020": 0.91,
-          "2021": 1.22
+          "Visits_2015": 0.98,
+          "Visits_2016": 0.99,
+          "Visits_2017": 1.3,
+          "Visits_2018": 1.9,
+          "Visits_2019": 0.97,
+          "Visits_2020": 0.91,
+          "Visits_2021": 1.22
         },
         "geometry": {
           "type": "Point",
@@ -265,13 +265,13 @@
         "type": "Feature",
         "properties": {
           "Name": "Denali National Park",
-          "2015": 0.56,
-          "2016": 0.59,
-          "2017": 0.64,
-          "2018": 0.59,
-          "2019": 0.6,
-          "2020": 0.058,
-          "2021": 0.25
+          "Visits_2015": 0.56,
+          "Visits_2016": 0.59,
+          "Visits_2017": 0.64,
+          "Visits_2018": 0.59,
+          "Visits_2019": 0.6,
+          "Visits_2020": 0.058,
+          "Visits_2021": 0.25
         },
         "geometry": {
           "type": "Point",

@@ -26,7 +26,7 @@ function calcMinValue(data){
         //loop through each year
         for(var year = 2015; year <= 2021; year+=5){
             //visits for latest year
-              var value = feature.properties["Pop_"+ String(year)];
+              var value = feature.properties["Visits_"+ String(year)];
               allValues.push(value);
         }
     }
@@ -48,7 +48,7 @@ function calcPropRadius(attValue) {
 
 //convert markers to circle markers and add popups
 function pointToLayer(feature, latlng){
-    var attribute = "Pop_2015";
+    var attribute = "Visits_2015";
 
     //create marker options
     var options = {
@@ -72,7 +72,7 @@ function pointToLayer(feature, latlng){
 
     //add attribute to popup content string
     var year = attribute.split("_")[1];
-    popupContent += "<p><b>Population in " + year + ":</b> " + feature.properties[attribute] + " million</p>";
+    popupContent += "<p><b> Visits_ in " + year + ":</b> " + feature.properties[attribute] + " million</p>";
 
     //tie circle marker to popup
     layer.bindPopup(popupContent, {
