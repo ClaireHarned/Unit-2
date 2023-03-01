@@ -24,7 +24,7 @@ function calcMinValue(data) {
     //loop through each park
     for (var feature of data.features) {
         //loop through each year
-        for (var year = 2015; year <= 2021; year += 5) {
+        for (var year = 2021; year <= 2021; year += 5) {
             //visits for latest year
             var value = feature.properties["Visits_" + String(year)];
             allValues.push(value);
@@ -68,7 +68,7 @@ function pointToLayer(feature, latlng) {
     var layer = L.circleMarker(latlng, options);
 
     //popup content string
-    var popupContent = "<p><b>feature:</b> " + feature.properties.feature + "</p>";
+    var popupContent = "<p><b>feature:</b> " + feature.properties.Name + "</p>";
 
     //add attribute to popup content string
     var year = attribute.split("_")[1];
@@ -95,8 +95,8 @@ function createSequenceControls() {
     document.querySelector("#panel").insertAdjacentHTML('beforeend', slider);
 
     //set slider attributes
-    document.querySelector(".range-slider").max = 6;
-    document.querySelector(".range-slider").min = 0;
+    document.querySelector(".range-slider").max = 15;
+    document.querySelector(".range-slider").min = 1;
     document.querySelector(".range-slider").value = 0;
     document.querySelector(".range-slider").step = 1;
 
@@ -122,4 +122,5 @@ function getData(map) {
             createSequenceControls();
         })
 };
+
 document.addEventListener('DOMContentLoaded', createMap)
