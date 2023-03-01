@@ -2,7 +2,7 @@
 var map;
 var minValue;
 
-function createMap(){
+function createMap() {
 
     //create the map
     map = L.map('map', {
@@ -19,15 +19,15 @@ function createMap(){
     getData(map);
 };
 
-function calcMinValue(data){
+function calcMinValue(data) {
     var allValues = [];
     //loop through each park
-    for(var feature of data.features){
+    for (var feature of data.features) {
         //loop through each year
-        for(var year = 2015; year <= 2021; year+=5){
+        for (var year = 2015; year <= 2021; year += 5) {
             //visits for latest year
-              var value = feature.properties["Visits_"+ String(year)];
-              allValues.push(value);
+            var value = feature.properties["Visits_" + String(year)];
+            allValues.push(value);
         }
     }
     //get minimum value of our array
@@ -41,13 +41,13 @@ function calcPropRadius(attValue) {
     //constant factor adjusts symbol sizes evenly
     var minRadius = 5;
     //Flannery Apperance Compensation formula
-    var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius
+    var radius = 1.0083 * Math.pow(attValue / minValue, 0.5715) * minRadius
 
     return radius;
 };
 
 //convert markers to circle markers and add popups
-function pointToLayer(feature, latlng){
+function pointToLayer(feature, latlng) {
     var attribute = "Visits_2015";
 
     //create marker options
@@ -76,12 +76,12 @@ function pointToLayer(feature, latlng){
 
     //tie circle marker to popup
     layer.bindPopup(popupContent, {
-          offset: new L.Point(0,-options.radius)
-      });
+        offset: new L.Point(0, -options.radius)
+    });
     return layer;
 };
 
-function createPropSymbols(data){
+function createPropSymbols(data) {
     //leaflet and geojson layer
     L.geoJson(data, {
         pointToLayer: pointToLayer
@@ -89,37 +89,37 @@ function createPropSymbols(data){
 };
 
 //Create new sequence controls
-function createSequenceControls(){
+function createSequenceControls() {
     //create range input element (slider)
     var slider = "<input class='range-slider' type='range'></input>";
-    document.querySelector("#panel").insertAdjacentHTML('beforeend',slider);
-    
+    document.querySelector("#panel").insertAdjacentHTML('beforeend', slider);
+
     //set slider attributes
     document.querySelector(".range-slider").max = 6;
     document.querySelector(".range-slider").min = 0;
     document.querySelector(".range-slider").value = 0;
     document.querySelector(".range-slider").step = 1;
-    
+
     //add step buttons
-    document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="reverse">Reverse</button>');
-    document.querySelector('#panel').insertAdjacentHTML('beforeend','<button class="step" id="forward">Forward</button>');
+    document.querySelector('#panel').insertAdjacentHTML('beforeend', '<button class="step" id="reverse">Reverse</button>');
+    document.querySelector('#panel').insertAdjacentHTML('beforeend', '<button class="step" id="forward">Forward</button>');
 
     //replace button content with images
-    document.querySelector('#reverse').insertAdjacentHTML('beforeend',"<img src='img/reverse.png'>")
-    document.querySelector('#forward').insertAdjacentHTML('beforeend',"<img src='img/forward.png'>")
+    document.querySelector('#reverse').insertAdjacentHTML('beforeend', "<img src='img/reverse.png'>")
+    document.querySelector('#forward').insertAdjacentHTML('beforeend', "<img src='img/forward.png'>")
 };
 
-function getData(map){
+function getData(map) {
     //load the data
     fetch("data/nationalparks.geojson")
-        .then(function(response){
+        .then(function (response) {
             return response.json();
         })
-        .then(function(json){
+        .then(function (json) {
             minValue = calcMinValue(json);
             //call function to create proportional symbols
             createPropSymbols(json);
             createSequenceControls();
         })
 };
-document.addEventListener('DOMContentLoaded',createMap)
+document.addEventListener('DOMContentLoaded', createMap)
