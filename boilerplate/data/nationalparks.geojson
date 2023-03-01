@@ -1,0 +1,285 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Great Smoky Mountains National Park",
+          "2015": 10.7,
+          "2016": 11.3,
+          "2017": 11.3,
+          "2018": 11.4,
+          "2019": 12.6,
+          "2020": 12.4,
+          "2021": 14.1
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -83.5532,
+            35.6131
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Gulf Islands National Seashore",
+          "2015": 3.98,
+          "2016": 4.77,
+          "2017": 3.95,
+          "2018": 4.23,
+          "2019": 5.6,
+          "2020": 4.01,
+          "2021": 5.5
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -88.7911,
+            30.3919
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Zion National Park",
+          "2015": 3.65,
+          "2016": 4.3,
+          "2017": 4.5,
+          "2018": 4.32,
+          "2019": 4.49,
+          "2020": 3.59,
+          "2021": 5
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.0263,
+            37.2982
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Yellowstone National Park",
+          "2015": 4.1,
+          "2016": 4.26,
+          "2017": 4.12,
+          "2018": 4.12,
+          "2019": 4.02,
+          "2020": 3.81,
+          "2021": 4.9
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -110.5885,
+            44.428
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Grand Canyon National Park",
+          "2015": 5.52,
+          "2016": 5.96,
+          "2017": 6.25,
+          "2018": 6.38,
+          "2019": 5.97,
+          "2020": 2.9,
+          "2021": 4.5
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.1129,
+            36.1069
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Rocky Mountain National Park",
+          "2015": 4.16,
+          "2016": 4.52,
+          "2017": 4.44,
+          "2018": 4.59,
+          "2019": 4.67,
+          "2020": 3.31,
+          "2021": 4.4
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -105.6836,
+            40.3428
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Acadia National Park",
+          "2015": 2.81,
+          "2016": 3.3,
+          "2017": 3.51,
+          "2018": 3.54,
+          "2019": 3.44,
+          "2020": 2.67,
+          "2021": 4
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -68.2733,
+            44.3386
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Grand Teton National Park",
+          "2015": 3.15,
+          "2016": 3.27,
+          "2017": 3.32,
+          "2018": 3.49,
+          "2019": 3.41,
+          "2020": 3.29,
+          "2021": 3.9
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -110.6818,
+            43.7904
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Yosemite National Park",
+          "2015": 4.15,
+          "2016": 5.03,
+          "2017": 4.34,
+          "2018": 4,
+          "2019": 4.42,
+          "2020": 2.27,
+          "2021": 3.3
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.5383,
+            37.8651
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Indiana Dunes National Park",
+          "2015": 1.64,
+          "2016": 1.7,
+          "2017": 2.16,
+          "2018": 1.76,
+          "2019": 2.13,
+          "2020": 2.29,
+          "2021": 3.2
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -87.0524,
+            41.6533
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Everglades National Park",
+          "2015": 1.07,
+          "2016": 0.93,
+          "2017": 1.18,
+          "2018": 0.59,
+          "2019": 1.1,
+          "2020": 0.73,
+          "2021": 0.94
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.8987,
+            25.2866
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Glacier National Park",
+          "2015": 2.37,
+          "2016": 3.01,
+          "2017": 3.31,
+          "2018": 2.97,
+          "2019": 3.05,
+          "2020": 1.7,
+          "2021": 3.08
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.787,
+            48.7596
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Badlands National Park",
+          "2015": 0.98,
+          "2016": 0.99,
+          "2017": 1.3,
+          "2018": 1.9,
+          "2019": 0.97,
+          "2020": 0.91,
+          "2021": 1.22
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.3397,
+            43.8554
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Name": "Denali National Park",
+          "2015": 0.56,
+          "2016": 0.59,
+          "2017": 0.64,
+          "2018": 0.59,
+          "2019": 0.6,
+          "2020": 0.058,
+          "2021": 0.25
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -151.1926,
+            63.1148
+          ]
+        }
+      }
+    ]
+  }
