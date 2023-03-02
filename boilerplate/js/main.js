@@ -24,7 +24,7 @@ function calcMinValue(data) {
     //loop through each park
     for (var feature of data.features) {
         //loop through each year
-        for (var year = 2021; year <= 2021; year += 5) {
+        for (var year = 2021; year <= 2021; year += 1) {
             //visits for latest year
             var value = feature.properties["Visits_" + String(year)];
             allValues.push(value);
@@ -39,7 +39,7 @@ function calcMinValue(data) {
 //radius of each proportional symbol
 function calcPropRadius(attValue) {
     //constant factor adjusts symbol sizes evenly
-    var minRadius = 5;
+    var minRadius = 1;
     //Flannery Apperance Compensation formula
     var radius = 1.0083 * Math.pow(attValue / minValue, 0.5715) * minRadius
 
@@ -68,7 +68,7 @@ function pointToLayer(feature, latlng) {
     var layer = L.circleMarker(latlng, options);
 
     //popup content string
-    var popupContent = "<p><b>feature:</b> " + feature.properties.Name + "</p>";
+    var popupContent = "<p><b>feature:</b> " + feature.properties.Park + "</p>";
 
     //add attribute to popup content string
     var year = attribute.split("_")[1];
@@ -88,6 +88,26 @@ function createPropSymbols(data) {
     }).addTo(map);
 };
 
+
+function processData(data){
+    //empty array to hold attributes
+    var attributes = [];
+
+    //properties of the first feature in the dataset
+    var properties = data.features[0].properties;
+
+    //push each attribute name into attributes array
+    for (var attribute in properties){
+        //only take attributes with population values
+        if (attribute.indexOf("Visits") > -1){
+            attributes.push(attribute);
+        };
+    };
+
+    return attributes;
+};
+
+
 //Create new sequence controls
 function createSequenceControls() {
     //create range input element (slider)
@@ -95,8 +115,8 @@ function createSequenceControls() {
     document.querySelector("#panel").insertAdjacentHTML('beforeend', slider);
 
     //set slider attributes
-    document.querySelector(".range-slider").max = 15;
-    document.querySelector(".range-slider").min = 1;
+    document.querySelector(".range-slider").max = 6;
+    document.querySelector(".range-slider").min = 0;
     document.querySelector(".range-slider").value = 0;
     document.querySelector(".range-slider").step = 1;
 
