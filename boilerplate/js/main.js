@@ -19,12 +19,12 @@ function createMap(){
 };
 
 function calcMinValue(data){
-    //create empty array to store all data values
+    //create array for data
     var allValues = [];
     //loop through each park
     for(var Park of data.features){
         //loop through each year
-        for(var year = 2021; year <= 2021; year+=1){
+        for(var year = 2015; year <= 2021; year+=1){
               //get visits for current year
               var value = Park.properties["Visits_"+ String(year)];
               //add value to array
@@ -39,7 +39,6 @@ function calcMinValue(data){
 
 //calculate the radius of each proportional symbol
 function calcPropRadius(attValue) {
-    //constant factor adjusts symbol sizes evenly
     var minRadius = 5;
     //Flannery Apperance Compensation formula
     var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius
@@ -49,7 +48,7 @@ function calcPropRadius(attValue) {
 
 //convert markers to circle markers and add popups
 function pointToLayer(feature, latlng,attributes){
-    //which attribute to visualize with proportional symbols
+    //tells which attribute to visualize with proportional symbols
     var attribute = attributes[0];
     console.log(attribute);
 
