@@ -10,8 +10,8 @@ function createMap() {
     });
 
     //add OSM base tilelayer
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    L.tileLayer('https://api.mapbox.com/styles/v1/charned/clehmmwn3001i01o2pcty0lna/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiY2hhcm5lZCIsImEiOiJjbGVnNHlybTYweDM5M3JxcWN5MDN1M2tjIn0.lZMnI67MIONaYwTE73kGAQ', {
+        
     }).addTo(map);
 
     //call getData function
@@ -43,7 +43,7 @@ function calcStats(data) {
 
 //calculate the radius of each proportional symbol
 function calcPropRadius(attValue) {
-    var minRadius = 6;
+    var minRadius = 1;
     //Flannery Apperance Compensation formula
     var radius = 1.0083 * Math.pow(attValue / dataStats.min, 0.5715) * minRadius;
     return radius;
@@ -56,7 +56,7 @@ function pointToLayer(feature, latlng, attributes) {
 
     //create marker options
     var options = {
-        fillColor: "#ff7800",
+        fillColor: "#ff9000",
         color: "#000",
         weight: 1,
         opacity: 1,

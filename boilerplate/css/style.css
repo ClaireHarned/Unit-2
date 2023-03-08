@@ -1,3 +1,8 @@
+
+
+
+
+
 #map {
     height: 600px;
     width: 100%;
@@ -54,4 +59,25 @@
 
 .legend-control-container p{
      margin: 0;
+}
+
+@font-face {
+    font-family: nature;
+    src: url(fonts1/The\ Natures.ttf);
+}
+
+@font-face {
+    font-family: drawingNature;
+    src: url(fonts1/Drawing\ Nature.ttf);
+}
+.title {
+    font-size: 35px;
+    color: rgb(21, 165, 21);  
+    text-align: center;
+    font-family: nature;
+
+}
+
+body{
+    background-color: rgb(193, 226, 182);
 }
