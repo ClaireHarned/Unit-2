@@ -71,12 +71,35 @@
     src: url(fonts1/Drawing\ Nature.ttf);
 }
 .title {
-    font-size: 35px;
-    color: rgb(21, 165, 21);  
+    font-size: 45px;
+    color: rgb(24, 117, 24);  
     text-align: center;
     font-family: nature;
 
 }
+
+ .text1 {
+    font-size: 20px;
+    font-family:'Times New Roman',;
+    color:rgb(68, 85, 68)
+
+    }
+
+    .container1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+img {
+    max-width: 100%;
+}
+
+.image1 {
+    flex-basis: 90%;
+    margin-bottom: 10px;
+}
+
 
 body{
     background-color: rgb(193, 226, 182);

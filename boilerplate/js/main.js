@@ -5,7 +5,7 @@ function createMap() {
 
     //create the map
     map = L.map('map', {
-        center: [30, -90],
+        center: [50, -90],
         zoom: 3
     });
 
